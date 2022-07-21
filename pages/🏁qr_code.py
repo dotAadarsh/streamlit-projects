@@ -22,6 +22,7 @@ web_link = st.text_input("Enter website URL 🔗", value = "https://aadarshkanna
 
 QRTag_API_URL = f"https://qrtag.net/api/qr_{size}.{img_type}?url={web_link}"
 
-with st.expander("Generated QR Code", expanded = True):
-    st.write("Scan 🤳/ Export ↗️ / do whatever you want 👻")
-    st.image(QRTag_API_URL)
+if QRTag_API_URL:
+    with st.expander("Generated QR Code", expanded = True):
+        st.write("Scan 🤳/ Export ↗️ / do whatever you want 👻")
+        st.image(QRTag_API_URL)
