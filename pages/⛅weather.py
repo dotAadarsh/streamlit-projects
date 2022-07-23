@@ -2,8 +2,10 @@ import streamlit as st
 import requests
 import json
 
-st.write("KEY: ", st.secrets["X-RapidAPI-Key"])
-st.write("KEYHost: ", st.secrets["X-RapidAPI-Host"])
+headers = {
+	"X-RapidAPI-Key": st.secrets["X-RapidAPI-Key"],
+	"X-RapidAPI-Host": st.secrets["X-RapidAPI-Host"]
+}
 
 url = "https://weatherapi-com.p.rapidapi.com/current.json"
 
