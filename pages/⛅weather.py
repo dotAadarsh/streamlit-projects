@@ -5,6 +5,8 @@ import requests
 import json
 import streamlit.components.v1 as components
 
+st.set_page_config(page_title = "Weather App", page_icon = "⛅") # Configures the default settings of the page.
+
 st.header("Weather App")
 st.subheader("Exploring Realtime Weather API")
 
