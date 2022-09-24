@@ -1,5 +1,7 @@
 import streamlit as st
 
+st.set_page_config(page_title="Streamlit projects", page_icon=None, layout="centered", initial_sidebar_state="collapsed", menu_items=None)
+
 st.header("Building projects with streamlit")
 st.info("More projects to come! Under construction!!!")
 st.image("https://media.giphy.com/media/hvN3SkNMRSB7mZa8JL/giphy.gif")
