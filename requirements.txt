@@ -1,1 +1,2 @@
+st-annotated-text==3.0.0
 streamlit==1.11.1
