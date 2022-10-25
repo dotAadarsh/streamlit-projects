@@ -1,6 +1,6 @@
 # Building projects with Streamlit
 
-**[Home](https://dotaadarsh-streamlit-projects-app-6djlzp.streamlitapp.com/)**
+**[Home](https://projects.streamlitapp.com/)**
 
 | Title | Hashnode | Dev.to | Demo |
 |-------------------------------------------|:----------------------------------------------------------------------------------------:|------: | ------: |
