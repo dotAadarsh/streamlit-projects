@@ -1,2 +1,5 @@
+openai==0.27.2
+pdfplumber==0.8.0
+qdrant-client==1.1.0
 st-annotated-text==3.0.0
 streamlit==1.11.1
