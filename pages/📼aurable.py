@@ -15,7 +15,7 @@ st.info("Please enter Deepgram API to proceed!. Get you DG Key [here](https://co
 DEEPGRAM_API_KEY = st.text_input("Please enter Deepgram API")
 
 uploaded_file = st.file_uploader("Upload any audio file", type='mp3')
-st.info("Upload a audio file. Here is an example audio - [Spacefacts.mp3](./assets/space_facts.mp3)")
+st.info("Upload a audio file. Here is an example audio - [Spacefacts.mp3](https://github.com/dotAadarsh/streamlit-projects/raw/main/assets/space_facts.mp3)")
 PATH_TO_FILE = uploaded_file
 
 with st.sidebar:
