@@ -8,8 +8,8 @@ st.set_page_config(page_title = "Are you bored?", page_icon = "🦥") # Configur
 st.header("Are you bored?")
 st.subheader("Let's find you something to do")
 
-url = "http://www.boredapi.com/api/activity/"
-gif_url = "https://giphy.p.rapidapi.com/v1/gifs/search"
+bored_api_url = "http://www.boredapi.com/api/activity/"
+gif_api_url = "https://giphy.p.rapidapi.com/v1/gifs/search"
 
 gif_api_key = st.secrets["gif-api-key"]
 
@@ -22,7 +22,7 @@ random = st.button("random", help="Click the button to generate an activity for 
 
 if random:
 
-    response = requests.request('GET', url)
+    response = requests.request('GET', bored_api_url)
     result = response.text
     data = json.loads(result)
 
@@ -31,7 +31,7 @@ if random:
    
     querystring = {"api_key":gif_api_key,"q": activity, "limit": "1"}
 
-    response_gif = requests.request("GET", gif_url, headers=headers, params=querystring)
+    response_gif = requests.request("GET", gif_api_url, headers=headers, params=querystring)
     result_gif = response_gif.text
  
     data = json.loads(result_gif)
