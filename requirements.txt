@@ -6,4 +6,4 @@ pdfplumber==0.8.0
 qdrant-client==1.1.0
 plotly==5.13.1
 st-annotated-text==3.0.0
-streamlit==1.11.1
+streamlit==1.30.0
