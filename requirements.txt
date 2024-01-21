@@ -7,3 +7,4 @@ qdrant-client==1.1.0
 plotly==5.13.1
 st-annotated-text==3.0.0
 streamlit==1.11.1
+pillow>=10.2.0 # not directly required, pinned by Snyk to avoid a vulnerability
